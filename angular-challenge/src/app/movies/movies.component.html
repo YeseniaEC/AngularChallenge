@@ -1,3 +1,32 @@
-<p>
-  movies works!
-</p>
+<div class="container-fluid background center">
+  <ng-container *ngFor="let movie of movies">
+    <div>
+      <div class="col-sm-6">
+          <div class="thumbnail">
+            <div class="ui black ribbon label">
+              <i class="film icon"></i> New!
+            </div>
+          <a href="{{ movie.trailer }}" target="_blank"><img src="{{ movie.img }}" class="img-responsive img-size" alt="{{ movie.title }}"></a>
+          <div class="caption text-center">
+            <h3>{{ movie.title }} </h3>
+            <p>Year Released: {{ movie.year }} </p>
+            <p>Description: {{ movie.description }}</p>
+            <p>
+              <a href="{{ movie.trailer }}" target="_blank"><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">View Trailer</button></a>
+            </p>
+          </div>
+          <div class="showtimes ui celled list text-center">
+            <h4>Showtimes</h4>
+              <div class="item"><p>4:30</p></div>
+              <div class="item"><p>6:00</p></div>
+              <div class="item"><p>8:15</p></div>
+              <div class="item"><p>9:20</p></div>
+              <div class="item"><p>10:30</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </ng-container>
+</div>      
+
+

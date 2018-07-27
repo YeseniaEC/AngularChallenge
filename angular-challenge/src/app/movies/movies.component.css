@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
+
+.background {
+    background-image: url('./../../assets/images/sunflower-bg.jpg');
+    background-size: contain;
+    margin-top: -20px;
+    padding-top: 25px;
+}
+.caption {
+    font-family: 'Raleway', sans-serif;
+}
+.center {
+    margin: auto;
+}
+.img-size {
+    height: 350px;
+    width: 600px;
+}
+.showtimes {
+    font-family: 'Lobster', sans-serif;
+}
