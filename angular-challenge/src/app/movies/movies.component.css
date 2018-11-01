@@ -10,7 +10,7 @@
     font-family: 'Raleway', sans-serif;
 }
 .thumbnail {
-    height: 870px;
+    height: 890px;
 }
 .center {
     margin: auto;
@@ -21,4 +21,21 @@
 }
 .showtimes {
     font-family: 'Lobster', sans-serif;
+}
+.description {
+    height: 170px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0,0, 0.2));
+}
+
+@media (max-width: 991px) {
+    .thumbnail {
+        height: auto;
+    }
+    .img-size {
+        height: 250px;
+    }
+    .description {
+        min-height: 100px;
+        height: auto;
+    }
 }
