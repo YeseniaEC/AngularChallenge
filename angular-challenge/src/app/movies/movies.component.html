@@ -1,7 +1,7 @@
 <div class="container-fluid background center">
   <ng-container *ngFor="let movie of movies">
     <div>
-      <div class="col-sm-6">
+      <div class="col-lg-6 col-md-12">
           <div class="thumbnail">
             <div class="ui black ribbon label">
               <i class="film icon"></i> New!
@@ -10,7 +10,7 @@
           <div class="caption text-center">
             <h3>{{ movie.title }} </h3>
             <p>Year Released: {{ movie.year }} </p>
-            <p>Description: {{ movie.description }}</p>
+            <p class="description">Description: {{ movie.description }}</p>
             <p>
               <a href="{{ movie.trailer }}" target="_blank"><button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">View Trailer</button></a>
             </p>
@@ -27,6 +27,6 @@
         </div>
       </div>
   </ng-container>
-</div>      
+</div>
 
 

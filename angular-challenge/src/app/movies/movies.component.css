@@ -9,6 +9,9 @@
 .caption {
     font-family: 'Raleway', sans-serif;
 }
+.thumbnail {
+    height: 870px;
+}
 .center {
     margin: auto;
 }
